@@ -65,4 +65,7 @@ decimal potassium
 * **Language and Features:** SQL(DDL, DML, CTEs, Window Aggregations, Views, Inner/Outer Joins, String Normalization)
 * **Data Source:** Multi-source JSON files (Yield, Climate, Fertilizer)
 
-  ##
+  ## Pipeline Execution and Verification
+
+  To create the schema and executive views locally:
+  * Execute schema initi
