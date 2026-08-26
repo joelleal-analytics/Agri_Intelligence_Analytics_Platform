@@ -1,4 +1,4 @@
-# Agri_Intelligence_Analytics_Platform
+# Agri Intelligence Analytics Platform
 End-to-End Data Pipeline, Relational Star Schema, and Executive Reporting Engine 
 
 ## Executive Summary
@@ -60,12 +60,19 @@ decimal potassium
 * **Nutrient Optimization Patterns:** High-nitrogen fertilizer applications primarily utilize Urea (39-42 N units) across loamy and black soils for cereals and oilseeds. Blend types like 28-28 serve as secondary input across legumes and paddy crops.
 * **Climate Sensitivity:** Plantains and yams demonstrate the highest water dependency, requiring annual rainfall exceeding 1,600 mm/year.
 
+---
+
 ## Technical Stack
 * **Database Management System:** MySQL Workbench / MySQL 8.0
 * **Language and Features:** SQL(DDL, DML, CTEs, Window Aggregations, Views, Inner/Outer Joins, String Normalization)
 * **Data Source:** Multi-source JSON files (Yield, Climate, Fertilizer)
 
-  ## Pipeline Execution and Verification
 
-  To create the schema and executive views locally:
-  * Execute schema initi
+## Pipeline Execution and Verification
+
+To create the schema and executive views locally:
+  * Execute schema initialization and staging scripts in [scripts/01_db_setup_and_staging.sql](https://github.com/joelleal-analytics/Agri_Intelligence_Analytics_Platform/blob/main/Scripts/01_db_setup_and_staging.sql)
+  * Build dimension and fact tables via [scripts/02_star_schema_modeling.sql](https://github.com/joelleal-analytics/Agri_Intelligence_Analytics_Platform/blob/main/Scripts/02_star_schema_modeling.sql)
+  * Run business analysis queries via [scripts/03_business_analytics.sql](https://github.com/joelleal-analytics/Agri_Intelligence_Analytics_Platform/blob/main/Scripts/03_business_analytics.sql)
+  * Deploy the executive reporting view via [scripts/04_executive_view.sql](https://github.com/joelleal-analytics/Agri_Intelligence_Analytics_Platform/blob/main/Scripts/04_executive_view.sql)
+    
